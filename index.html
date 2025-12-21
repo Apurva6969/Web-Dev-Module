@@ -4,22 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h3 {
+            color: green;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My First Webpage</h1>
-    <p>Hi My name is Apurva and this is the first webpage I have created.</p>
-    <h3>My Hobbies</h3>
-    <ol>
-        <li>Coding</li>
-        <li>Going on rides</li>
-        <li>Playing games</li>
-    </ol>
-    <h3>My Favorite Foods</h3>
-    <ul>
-        <li><strong>Pizza</strong></li>
-        <li><em>Momo</em></li>
-        <li>Biryani</li>
-    </ul>
-    <a href="about.html">About Page</a>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a>
+    </div>
+
+    <div class="main-content">
+
+        <div class="notice">Foods</div>
+
+        <h1 id="main-heading">Welcome to My First Webpage</h1>
+
+        <p class="highlight">
+            Hi my name is <span>Apurva</span> and this is the first webpage I have created.
+        </p>
+
+        <div class="content-box box-model">
+            <p>This is a Food BOX.</p>
+        </div>
+
+        <h3 class="sticky-heading">My Hobbies</h3>
+
+        <ol>
+            <li>Coding</li>
+            <li>Going on rides</li>
+            <li>Playing games</li>
+        </ol>
+
+        <h3>My Favorite Foods</h3>
+
+        <ul>
+            <li><strong>Pizza</strong></li>
+            <li><em>Momo</em></li>
+            <li>Biryani</li>
+        </ul>
+
+        <p>I like Pizza.</p>
+        <p>I like Momo.</p>
+        <p>I like Biryani.</p>
+
+        <p style="color: purple;">Hello Food World.</p>
+
+        <a href="about.html">About Page</a>
+
+    </div>
+
 </body>
 </html>
