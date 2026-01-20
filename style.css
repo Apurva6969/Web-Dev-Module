@@ -76,3 +76,45 @@ span {
     background-color: #ccc;
     padding: 10px;
 }
+.photos-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photos-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.photos-flex img,
+.photos-grid img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .photos-flex img {
+        flex: 100%;
+    }
+    .photos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .photos-flex img {
+        flex: 48%;
+    }
+    .photos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .photos-flex img {
+        flex: 23%;
+    }
+    .photos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
