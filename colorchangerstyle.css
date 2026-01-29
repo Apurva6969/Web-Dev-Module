@@ -1,0 +1,7 @@
+#colorBox {
+    width: 500px;
+    height: 500px;
+    background-color: lightgray;
+    transition: background-color 0.5s ease;
+    margin-bottom: 10px;
+}
